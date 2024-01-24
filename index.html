@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        margin-left: 500px;
+        background-color: rgb(209, 215, 220);
+      }
+      h3 {
+        margin-left: 20px;
+        color: black;
+      }
+      p {
+        margin-left: 20px;
+        color: black;
+      }
+      img {
+        max-width: 35%;
+        height: auto;
+        margin-left: 20px;
+        border-radius: 10px;
+      }
+      .div {
+        border: 1px, solid;
+      }
+      .cover-box {
+        position: relative;
+        overflow: hidden;
+        width: 78%;
+        height: 400px;
+        border-radius: 15px;
+      }
+
+      .cover-box:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 150%;
+        background-color: white;
+        border-radius: 15px;
+      }
+
+      .content {
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cover-box">
+      <div class="content">
+        <img src="images/image-qr-code.png" alt="" />
+        <h3>
+          Improve your front-end <br />
+          skills by building projects
+        </h3>
+
+        <p>
+          Scan the QR code to visit Frontend <br />
+          Mentor and take your coding skills to <br />
+          the next level
+        </p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://wa.me/+254715329007">Clinton Gilly</a>.
+    </div>
+  </body>
+</html>
